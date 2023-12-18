@@ -1,0 +1,14 @@
+version: "3.5"
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:${SOFTWARE_VERSION_TAG}
+    volumes:
+      - ./storage/config:/config
+      - ./storage/cache:/cache
+      - ./storage/media:/media
+      - ./storage/media2:/media2:ro
+    restart: "always"
+    environment:
+      - JELLYFIN_PublishedServerUrl=https://${DOMAIN}
+    ports:
+      - 172.17.0.1:44405:8096
