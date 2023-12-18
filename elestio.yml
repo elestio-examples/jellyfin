@@ -12,10 +12,6 @@ environments:
     value: "latest"
   - key: "DOMAIN"
     value: "[CI_CD_DOMAIN]"
-  - key: "ADMIN_EMAIL"
-    value: "[EMAIL]"
-  - key: "ADMIN_PASSWORD"
-    value: "random_password"
 
 config:
   runTime: "dockerCompose"
@@ -36,9 +32,3 @@ lifeCycleConfig:
 webUI:
   - url: "https://[CI_CD_DOMAIN]"
     label: "Jellyfin"
-    login: "[ADMIN_EMAIL]"
-    password: "[ADMIN_PASSWORD]"
-  - url: "https://[CI_CD_DOMAIN]:31021"
-    label: "pgAdmin"
-    login: "[ADMIN_EMAIL]"
-    password: "[ADMIN_PASSWORD]"

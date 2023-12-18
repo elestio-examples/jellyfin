@@ -13,5 +13,7 @@ Deploy Jellyfin server with CI/CD on Elestio
 You can open Jellyfin UI here:
 
     URL: https://[CI_CD_DOMAIN]
-    Login: [ADMIN_EMAIL]
-    password: [ADMIN_PASSWORD]
+
+# First use
+
+You will need to register for your first use.
